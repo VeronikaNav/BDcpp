@@ -1,6 +1,6 @@
 #include "ZAG.h"
 using namespace std;
-using namespace nm;
+namespace nm {
 istream& operator>>(istream& in, Fragrance& p) {
     in >> p._title >> p._label >> p._cost;
     return in;
@@ -226,4 +226,5 @@ void modify() {
     out.close();
     delete[] temp;
     cout << "kaif!\n\n";
+}
 }
